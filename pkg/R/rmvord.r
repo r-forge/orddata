@@ -5,7 +5,7 @@
 #
 ############################################
 
-rmvord=function(probs,Cor,n=1)
+rmvord=function(probs,Cor,n=1,showCor_norm=TRUE)
 {
     q=length(probs)
     categ_probs=0
@@ -47,6 +47,7 @@ rmvord=function(probs,Cor,n=1)
         Cor_norm[i,j]=Cor_norm[j,i]=f(Cor[i,j]*sqrt(vars[i]*vars[j])+means[i]*means[j]-categ_probs[i]*categ_probs[j]+categ_probs[j]*sum(cumul_probs[[i]][1:(categ_probs[i]-1)])+categ_probs[i]*sum(cumul_probs[[j]][1:(categ_probs[j]-1)]))
       }
     }
+    if(showCor_norm) print(Cor_norm)
     retval=rmvnorm(n=n,sigma=Cor_norm)
     for (i in 1:q)
     {

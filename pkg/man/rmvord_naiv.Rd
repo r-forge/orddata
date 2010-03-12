@@ -1,5 +1,5 @@
-\name{rmvord}
-\alias{rmvord}
+\name{rmvord_naiv}
+\alias{rmvord_naiv}
 
 \title{
 Multivariate Ordinal Random Variates}
@@ -9,7 +9,7 @@ Creates correlated multivariate ordinal random variables by
   thresholding a normal distribution.
 }
 \usage{
-rmvord(probs, Cor, n = 1, showCor_norm = TRUE)
+rmvord_naiv(probs, Cor, n = 1, showCor = TRUE)
 }
 
 \arguments{
@@ -23,8 +23,8 @@ Correlation matrix
   \item{n}{
 Number of Observations
 }
-  \item{showCor_norm}{
-If TRUE analytical correlation matrix is printed.
+  \item{showCor}{
+If TRUE correlation matrix is printed.
 }
 
 }
@@ -46,7 +46,7 @@ Dominik Traeger and Sebastian Kaiser
 \code{\link{rmvord_b}},\code{\link{rmvord_mc}}
 }
 \examples{
-rmvord(list(c(1,1,1,1)/4,c(1,1,1,1)/4), cbind(c(1, 0.4), c(0.4, 1)), n = 20)
+rmvord_naiv(list(c(1,1,1,1)/4,c(1,1,1,1)/4), cbind(c(1, 0.4), c(0.4, 1)), n = 20)
 }
 
 \keyword{distribution}
