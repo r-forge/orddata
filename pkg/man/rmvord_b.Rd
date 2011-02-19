@@ -9,18 +9,18 @@ Creates correlated multivariate ordinal random variables by converting
 them into binary variables.
 }
 \usage{
-rmvord_b(probs, Cor, n = 1, showCor_b = FALSE)
+rmvord_b(n = 1, probs, Cor, showCor_b = FALSE)
 }
 \arguments{
+  \item{n}{
+Number of Observations
+}
   \item{probs}{
     List of probabilities for the variables, length of probability equals
   number of items, length of list equals number of variables
 }
   \item{Cor}{
 Correlation matrix
-}
-  \item{n}{
-Number of Observations
 }
   \item{showCor_b}{
 If TRUE binary correlation matrix is printed.

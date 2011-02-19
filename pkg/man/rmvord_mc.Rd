@@ -7,19 +7,19 @@ Creates correlated multivariate ordinal random variables by a Monte
 Carlo simulation.
 }
 \usage{
-rmvord_mc(probs, Cor, n = 1)
+rmvord_mc(n = 1, probs, Cor)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
+  \item{n}{
+Number of Observations
+}
   \item{probs}{
     List of probabilities for the variables, length of probability equals
   number of items, length of list equals number of variables
 }
   \item{Cor}{
 Correlation matrix
-}
-  \item{n}{
-Number of Observations
 }
 }
 

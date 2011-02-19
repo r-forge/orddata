@@ -7,7 +7,7 @@
 #
 ########################################################
 
-rmvord_b=function(probs,Cor,n=1,showCor_b=FALSE)
+rmvord_b=function(n=1,probs,Cor,showCor_b=FALSE)
 {
   q=length(probs)
   enum=vector(length=q)

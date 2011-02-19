@@ -5,7 +5,7 @@
 #
 ############################################
 
-rmvord_naiv=function(probs,Cor,n=1,showCor=TRUE)
+rmvord_naiv=function(n=1,probs,Cor,showCor=TRUE)
 {
     q=length(probs)
     categ_probs=0

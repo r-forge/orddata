@@ -5,7 +5,7 @@
 #
 ############################################
 
-rmvord=function(probs,Cor,n=1,showCor_norm=TRUE)
+rmvord=function(n=1,probs,Cor,showCor_norm=TRUE)
 {
     q=length(probs)
     categ_probs=0

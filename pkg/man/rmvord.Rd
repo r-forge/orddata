@@ -9,19 +9,19 @@ Creates correlated multivariate ordinal random variables by
   thresholding a normal distribution.
 }
 \usage{
-rmvord(probs, Cor, n = 1, showCor_norm = TRUE)
+rmvord(n = 1, probs, Cor, showCor_norm = TRUE)
 }
 
 \arguments{
+  \item{n}{
+Number of Observations
+}
   \item{probs}{
     List of probabilities for the variables, length of probability equals
   number of items, length of list equals number of variables
 }
   \item{Cor}{
 Correlation matrix
-}
-  \item{n}{
-Number of Observations
 }
   \item{showCor_norm}{
 If TRUE analytical correlation matrix is printed.
